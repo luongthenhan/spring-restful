@@ -9,8 +9,17 @@ package vn.khmt.spring.restful;
  */
 class User {
 
-    String name;
-    int age;
+    private long id;
+    private String name;
+    private Integer age;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -20,17 +29,17 @@ class User {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
     @Override
     public String toString() {
-        return "User{" + "name=" + name + ", age=" + age + '}';
+        return "User{" + "id=" + id + ", name=" + name + ", age=" + age + '}';
     }
 
 }
